@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌊Exploração do Oceano</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Exploração do Oceano</h1>
+    <p class="description">Mergulhe nas profundezas do oceano e descubra criaturas incríveis e tecnologias avançadas para explorar o mundo subaquático!</p>
+  </header>
+
+  <div class="ocean-animals">
+    <div class="animal">
+      <img src="frontend/static/peixe.png" alt="Peixe Azul">
+      <span>Peixe Azul</span>
+    </div>
+    <div class="animal">
+      <img src="frontend/static/tartaruga.jpeg" alt="Tartaruga Marinha">
+      <span>Tartaruga Marinha</span>
+    </div>
+    <div class="animal">
+      <img src="frontend/static/viva.jpeg" alt="Água-viva">
+      <span>Água-viva</span>
+    </div>
+    <div class="animal">
+      <img src="frontend/static/golfinho.png" alt="Golfinho">
+      <span>Golfinho</span>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <button onclick="abrirChatbot()">Abrir Chat-bot</button>
+          <!-- Script do Dialogflow Messenger -->
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+      <df-messenger
+        intent="WELCOME"
+        chat-title="ChatOcean"
+        agent-id="1866d704-4b53-4598-a3b7-9fa7fcbc7a19"
+        language-code="pt-br"
+        style="display: none;">
+      </df-messenger>
+    <button onclick="abrirReconhecimento()">IA de Reconhecimento</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
