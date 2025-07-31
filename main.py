@@ -13,9 +13,9 @@ CORS(app)
 
 # Mapeia emoções para as pastas de imagens
 emocoes_para_pastas = {
-    "happy": "static/mar_feliz",
-    "sad": "static/mar_triste",
-    "neutral": "static/mar_neutro"
+    "happy": "public/static/mar_feliz",
+    "sad": "public/static/mar_triste",
+    "neutral": "public/static/mar_neutro"
 }
 
 # Função auxiliar para escolher uma imagem aleatória de uma pasta

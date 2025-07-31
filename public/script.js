@@ -54,7 +54,7 @@ function abrirReconhecimento() {
           const formData = new FormData();
           formData.append("imagem", blob, "foto.jpg");
 
-          fetch("/api/analisa-rosto", {
+          fetch("/analisa-rosto", {
             method: "POST",
             body: formData
           })
