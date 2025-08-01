@@ -14,6 +14,21 @@ function abrirChatbot() {
   }
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+  const observer = new MutationObserver(() => {
+    const chatPreview = document
+      .querySelector("df-messenger")
+      ?.shadowRoot?.querySelector("df-messenger-chat");
+
+    if (chatPreview) {
+      chatPreview.style.display = "none";
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+
+
 function abrirReconhecimento() {
   const video = document.createElement("video");
   const canvas = document.createElement("canvas");
