@@ -4,9 +4,52 @@
   <meta charset="UTF-8">
   <title>🐬 Golfinho</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    .info-box {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    th {
+      background-color: #f9f9f9;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 40px auto;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="info-box">
     <h1>Golfinho</h1>
     <p class="description">Os golfinhos são seres incrivelmente inteligentes e sociáveis. Saiba mais sobre eles!</p>
   </header>
@@ -15,7 +58,7 @@
     <img src="../static/golfinho.png" alt="Golfinho" style="max-width: 300px; border-radius: 12px;">
   </div>
 
-  <section class="description" style="max-width: 800px; text-align: justify;">
+  <section class="info-box" style="text-align: justify;">
     <p>Comunicando-se por sons e cliques, os golfinhos vivem em grupos e demonstram comportamento colaborativo e empático com seus companheiros.</p>
     <ul>
       <li>🧠 São capazes de aprender comandos e truques complexos.</li>
@@ -23,5 +66,63 @@
       <li>🤝 Costumam ajudar membros feridos do grupo.</li>
     </ul>
   </section>
+
+  <section class="info-box" style="text-align: justify;">
+    <h2>🌊 Habitat</h2>
+    <p>Os golfinhos habitam mares e oceanos de águas tropicais e temperadas ao redor do mundo. Algumas espécies também vivem em rios de água doce, como o boto-cor-de-rosa da Amazônia.</p>
+  </section>
+
+  <section class="info-box" style="text-align: justify;">
+    <h2>🍽️ Alimentação</h2>
+    <p>São carnívoros e se alimentam principalmente de peixes e lulas. Utilizam estratégias de caça em grupo, coordenando-se para cercar cardumes ou conduzir as presas para áreas rasas.</p>
+  </section>
+
+  <section class="info-box" style="text-align: justify;">
+    <h2>✨ Curiosidades</h2>
+    <ul>
+      <li>⏱️ Dormem com metade do cérebro acordado para continuar respirando.</li>
+      <li>🏊 Podem nadar a mais de 30 km/h.</li>
+      <li>👶 A gestação de um golfinho dura cerca de 12 meses.</li>
+      <li>📚 Alguns cientistas acreditam que os golfinhos têm nomes próprios, identificados por assobios únicos.</li>
+    </ul>
+  </section>
+
+  <section class="info-box" style="text-align: justify;">
+    <h2>📊 Comparativo: Golfinho vs Outros Cetáceos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Características</th>
+          <th>Golfinho</th>
+          <th>Baleia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tamanho</td>
+          <td>2 a 4 metros</td>
+          <td>10 a 30 metros</td>
+        </tr>
+        <tr>
+          <td>Velocidade</td>
+          <td>30-40 km/h</td>
+          <td>10-20 km/h</td>
+        </tr>
+        <tr>
+          <td>Inteligência</td>
+          <td>Alta</td>
+          <td>Muito alta</td>
+        </tr>
+        <tr>
+          <td>Socialização</td>
+          <td>Extremamente sociável</td>
+          <td>Geralmente solitária ou em pequenos grupos</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Botão de voltar -->
+  <a href="../index.html" class="back-button">⬅️ Voltar para o Início</a>
 </body>
 </html>
